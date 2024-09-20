@@ -3,8 +3,12 @@
   display:flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #f0f4f9;
-  padding:25px 15px;
+  background: #6190E8;  
+  background: -webkit-linear-gradient(to bottom, #A7BFE8, #6190E8);  
+  background: linear-gradient(to bottom, #A7BFE8, #6190E8); 
+  
+  color:white;
+    padding:25px 15px;
 }
 
 .sidebar img{
@@ -33,6 +37,7 @@
 .sidebar .recent{
   display: flex;
   flex-direction: column;
+  animation : fadeIn 1.5s;
 }
 .sidebar .recent-title{
   margin-top: 30px;
@@ -60,4 +65,17 @@
 .sidebar .bottom-item{
   padding-right: 10px;
   cursor: pointer;
+}
+
+@media (max-width:600px) {
+  .main-bottom input {
+    flex:none;
+    width:150px;
+  }
+  .main-bottom img{
+      width:20px;
+  }
+  .search-box div{
+    gap:5px;
+  }
 }
